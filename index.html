@@ -13,18 +13,52 @@
  <!-- tailwind cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            clifford: '#da373d',
-          }
+      tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          manrope: ['Manrope', 'sans-serif'],
+        },
+        colors: {
+          clifford: '#da373d',
         }
       }
     }
+  }
   </script>
 </head>
-<body>
-    
+<body class="font-manrope">
+    <header class="max-w-screen-xl mx-auto md:flex  px-16 lg:px-28">
+      <!-- text related  -->
+      <div class="space-y-5">
+        <h1 class="text-7xl font-bold ">  It's good <br>
+tea time at The <br> Tea House</h1>
+          <p class="text-gray-500 ">Tea and Botanical Solutions Supplier Give Optimum <br> Satisfaction To Your Taste Buds.</p>
+          <button class="bg-gradient-to-r from-orange-400 to-red-500 px-5 py-3 rounded-lg font-bold">Explore More <i class="fa-solid fa-arrow-right -rotate-45 "></i></button>
+      </div>
+      <!-- img related -->
+       <div class="relative">
+        <!-- img -->
+         <div>
+          <img class="w-full" src="images/banner.png" alt="">
+         </div>
+         <!-- card -->
+          <div class="flex justify-center bg-white shadow-lg px-2 py-2 absolute top-80 lg:left-32 md:left-28">
+            <div>
+              <i class="fa-solid fa-star text-2xl text-amber-500"></i>
+            </div>
+            <div>
+                <h2 class="font-bold text-3xl">5.00</h2>
+                <p class="text-gray-500">Trust Pilot Ratings</p>
+            </div>
+          </div>
+       </div>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
 </body>
 </html>
